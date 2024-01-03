@@ -101,7 +101,70 @@
             </article>
         </section>
         <section id="Formulario">
+            <div>
+                <h2>Preguntas frecuentes</h2>
+                <details>
+                    <summary>¿Dónde se ubican?</summary>
+                    <p>Parroquia Nuestra Señora de Loreto - Residencial La Cruceta en Surco</p>
+                </details>
+            </div>
+            <div>
+                <h2>Matrícula</h2>
+                <form action="/" method="post">
+                    <fieldset>
+                        <legend>Datos del alumno</legend>
+                        <label>Apellidos: 
+                            <input type="text" placeholder="Torres" required>
+                        </label>
+                        <label>Nombres: 
+                            <input type="text" placeholder="Jonas" required>
+                        </label>
+                        <label>Edad: 
+                            <input type="number" name="age" id="age" pattern="[0-1][0-9]" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Datos del apoderado</legend>
+                        <label>Apellidos:
+                            <input type="text" placeholder="Garcia" required>
+                        </label>
+                        <label>Nombres: 
+                            <input type="text" placeholder="Manuel" required>
+                        </label>
+                        <label>Celular: 
+                            <input type="tel" name="celular" id="celular" pattern="[0-9]{9}" required>
+                        </label>
+                        <label>Email: 
+                            <input type="email" name="email" id="email" required>
+                        </label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Programa a elegir</legend>
+                        <datalist id="l-programs">
+                            <option value="Clases particulares"></option>
+                            <option value="Programa Sabatino"></option>
+                            <option value="Preparación de prácticas y exámenes"></option>
+                            <option value="Leer y escribir refuerzo"></option>
+                        </datalist>
+                        <label>
+                            ¿Cuál es el programa que deseas?
+                            <input list="l-programs" name="l-programs" required>
+                        </label>
+                        <label for="day">¿En qué días?</label>
+                        <select name="day" id="day">
+                            <option value="LXV">L-X-V</option>
+                            <option value="MJS">M-J-S</option>
+                        </select>
+                        <label for="hour">¿En qué horario?</label>
+                        <select name="hour" id="hour">
+                            <option value="AM">9:00 - 11:00am</option>
+                            <option value="PM">4:00 - 6:00pm</option>
+                        </select>
+                    </fieldset>
 
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
         </section>
     </main>
     <footer id="Contacto">
