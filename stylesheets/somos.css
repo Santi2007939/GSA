@@ -1,0 +1,57 @@
+#Somos {
+    width: 80%;
+    height: calc(100vh - 90px);
+    margin: auto;
+    text-align: center;
+    position: relative;
+}
+
+#Somos > div {
+    background-color: #f95f4e;
+    position: absolute;
+    inset: 0;
+    height: max-content;
+    padding: 20px;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#Somos h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+#Somos p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+#Somos ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+#Somos ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+#Somos svg {
+    border-radius: 30px;
+    width: 90px;
+    height: auto;
+    stroke: #FBD513;
+    z-index: 2;
+}
+
+.somos-text {
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: -5px;    
+}
