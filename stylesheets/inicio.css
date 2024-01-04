@@ -1,0 +1,14 @@
+#inicio {
+    height: calc(100vh - 90px);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+}
+
+#inicio img {
+    width: 200px;
+}
+
