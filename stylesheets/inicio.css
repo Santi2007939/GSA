@@ -1,14 +1,24 @@
-#inicio {
+#Inicio {
     height: calc(100vh - 90px);
-    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: wheat;
+    background: linear-gradient(#2F2C2C, #000);
+    color: #F8F6F6;
 }
 
-#inicio img {
+#Inicio img {
     width: 200px;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+p { 
+    margin-top: -10px;
+    font-weight: 300;
 }
 
