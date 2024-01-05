@@ -1,9 +1,13 @@
 #Programas {
-    width: 92%;
-    max-height: fit-content;
+    width: 80%;
+    height: fit-content;
     text-align: center;
     margin: auto;
     margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #Programas h2 {
@@ -11,11 +15,38 @@
     font-weight: 600;
 }
 
-#Programas .container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 60px;
-    place-content: center;
+#help {
+    position: relative;
+}
+
+@keyframes grow-progress {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.container {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    flex-direction: row;
+    gap: 316px;
+    width: 855px;
+    align-self: center;
+
+    justify-content: space-between;
+}
+
+.program__progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1em;
+    transform: scaleX(calc(1 / var(--num-programs)));
+
+    animation: auto grow-progress linear forwards;
+    animation-timeline: --container;
 }
 
 .program p {
@@ -24,15 +55,56 @@
 
 .program {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 80% auto;
     padding: 10px;
     border-radius: 5px;
     justify-items: center;
     align-items: center;
+    column-gap: 10px;
 }
 
 .program img {
-    width: 250px;
+    max-width: 400px;
     border-radius: 15px;
+    display: block;
 }
 
+@media (width < 972px) {
+    .program img {
+        max-width: 300px;
+    }
+
+    .container {
+        width: 700px;
+        gap: 260px;
+    }
+}
+
+@media (width < 774px) {
+    .program img {
+        max-width: 200px;
+    }
+
+    .container {
+        width: 496px;
+        gap: 180px;
+    }
+}
+
+@media (width < 647px) {
+    .container {
+        flex-wrap: wrap;
+        gap: 30px;
+        overflow-x: hidden;
+    }
+
+    .program {
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .program p {
+        width: 80%;
+        margin: auto;
+    }
+}
