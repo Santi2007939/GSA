@@ -2,6 +2,7 @@
 @import url(./inicio.css);
 @import url(./somos.css);
 @import url(./programs.css);
+@import url(./form.css);
 
 body {
     padding: 0;

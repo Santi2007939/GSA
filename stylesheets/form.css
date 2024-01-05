@@ -1,0 +1,86 @@
+#Formulario {
+    height: fit-content;
+    display: flex;
+    width: 96%;
+    justify-content: space-around;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+#QA, #Form {
+    background-color: #f95f4e;
+    margin-top: 10px;
+}
+
+#QA {
+    height: fit-content;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+#QA h2 {
+    text-align: center;
+}
+
+#Form {
+    max-width: 500px;
+    min-width: 300px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    border-radius: 15px;
+}
+
+#Form legend, #Form h2, #Formulario #QA{
+    color: #F8F6F6;
+}
+
+#Form h2 {
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#Form label {
+    display: block;
+}
+
+fieldset, #submit {
+    border: none;
+    width: 80%;
+    margin: 10px auto;
+    margin-bottom: 20px;
+}
+
+input, select {
+    width: 100%;
+    margin: 10px 0;
+    height: 2rem;
+    border-radius: 4px;
+    border-style: none;
+    background-color: #FBD513;
+    color: #F8F6F6;
+    padding-left: 10px;
+    font-size: 0.9em;
+}
+
+#submit {
+    display: block;
+    cursor: pointer;
+    padding: auto;
+    font-family: 'Poppins', sans-serif;
+    background-color: #8D9CAA;
+}
+
+details > summary {
+    padding: 2px 6px;
+    cursor: pointer;
+}
+
+details > p {
+    padding: 5px 30px;
+    color: #2F2C2C;
+}
+
+details[open], details {
+    width: 400px;
+}

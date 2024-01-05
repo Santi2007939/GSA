@@ -107,47 +107,41 @@
                 <article class="program">
                     <div class="program__text">
                         <h3>Programa Sabatino</h3>
-                        <p>
-                            El Programa Sabatino consiste en actividades educativas los sábados, siendo una opción flexible para aquellos con compromisos laborales durante la semana. Es una alternativa que permite mejorar habilidades o adquirir conocimientos sin interferir con responsabilidades diarias.</p>
+                        <p>El Programa Sabatino consiste en actividades educativas los sábados, siendo una opción flexible para aquellos con compromisos laborales durante la semana. Es una alternativa que permite mejorar habilidades o adquirir conocimientos sin interferir con responsabilidades diarias.</p>
                     </div>
                     <img src="./img/programaSabatino.png" alt="" class="program__img">
                 </article>
                 <article class="program">
                     <div class="program__text">
                         <h3>Preparación de prácticas y exámenes</h3>
-                        <p>
-                            Este servicio prepara a estudiantes para evaluaciones académicas mediante la revisión de conceptos clave, práctica de estrategias para abordar preguntas y familiarización con el formato de las pruebas. Busca maximizar el rendimiento del estudiante en momentos críticos de evaluación.</p>
+                        <p>Este servicio prepara a estudiantes para evaluaciones académicas mediante la revisión de conceptos clave, práctica de estrategias para abordar preguntas y familiarización con el formato de las pruebas. Busca maximizar el rendimiento del estudiante en momentos críticos de evaluación.</p>
                     </div>
                     <img src="./img/preparacion.png" alt="" class="program__img">
                 </article>
                 <article class="program">
                     <div class="program__text">
                         <h3>Leer y escribir refuerzo</h3>
-                        <p>
-                            Este programa de refuerzo está diseñado para mejorar las habilidades de lectura y escritura de los estudiantes, centrándose en fortalecer la comprensión lectora, la expresión escrita y habilidades lingüísticas en general. Incluye actividades prácticas, ejercicios específicos y técnicas pedagógicas para desarrollar la competencia y confianza del estudiante en lectura y escritura.</p> 
+                        <p>Este programa de refuerzo está diseñado para mejorar las habilidades de lectura y escritura de los estudiantes, centrándose en fortalecer la comprensión lectora, la expresión escrita y habilidades lingüísticas en general. Incluye actividades prácticas, ejercicios específicos y técnicas pedagógicas para desarrollar la competencia y confianza del estudiante en lectura y escritura.</p> 
                     </div>
                     <img src="./img/leerEscribir.png" alt="" class="program__img">
                 </article>
             </div>
         </section>
         <section id="Formulario">
-            <div>
+            <div id="QA">
                 <h2>Preguntas frecuentes</h2>
                 <details>
                     <summary>¿Dónde se ubican?</summary>
                     <p>Parroquia Nuestra Señora de Loreto - Residencial La Cruceta en Surco</p>
                 </details>
             </div>
-            <div>
+            <div id="Form">
                 <h2>Matrícula</h2>
                 <form action="/" method="post">
                     <fieldset>
                         <legend>Datos del alumno</legend>
-                        <label>Apellidos: 
-                            <input type="text" placeholder="Torres" required>
-                        </label>
-                        <label>Nombres: 
-                            <input type="text" placeholder="Jonas" required>
+                        <label>Nombre completo: 
+                            <input type="text" placeholder="Jonas Torres" required>
                         </label>
                         <label>Edad: 
                             <input type="number" name="age" id="age" pattern="[0-1][0-9]" required>
@@ -155,11 +149,8 @@
                     </fieldset>
                     <fieldset>
                         <legend>Datos del apoderado</legend>
-                        <label>Apellidos:
-                            <input type="text" placeholder="Garcia" required>
-                        </label>
-                        <label>Nombres: 
-                            <input type="text" placeholder="Manuel" required>
+                        <label>Nombre completo:
+                            <input type="text" placeholder="Manuel Garcia" required>
                         </label>
                         <label>Celular: 
                             <input type="tel" name="celular" id="celular" pattern="[0-9]{9}" required>
@@ -192,7 +183,7 @@
                         </select>
                     </fieldset>
 
-                    <input type="submit" value="Enviar">
+                    <input type="submit" value="Enviar" id="submit">
                 </form>
             </div>
         </section>
