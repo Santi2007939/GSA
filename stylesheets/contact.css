@@ -1,0 +1,15 @@
+#Contact {
+    height: 200px;
+    background-color: #8D9CAA;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#Contact a {
+    text-decoration: none;
+}
