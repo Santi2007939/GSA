@@ -1,0 +1,36 @@
+#Programas {
+    width: 92%;
+    max-height: fit-content;
+    text-align: center;
+    margin: auto;
+}
+
+#Programas h2 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+#Programas .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 60px;
+}
+
+.program p {
+    text-align: justify;
+}
+
+.program {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    padding: 10px;
+    border-radius: 5px;
+    justify-items: center;
+    align-items: center;
+}
+
+.program img {
+    width: 250px;
+    border-radius: 15px;
+}
+

@@ -1,6 +1,7 @@
 @import url(./navbar.css);
 @import url(./inicio.css);
 @import url(./somos.css);
+@import url(./programs.css);
 
 body {
     padding: 0;
