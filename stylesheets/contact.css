@@ -13,3 +13,18 @@
 #Contact a {
     text-decoration: none;
 }
+
+#Contact .icon {
+    transition: stroke 300ms linear;
+}
+
+#Contact .icon:hover {
+    stroke: #F8F6F6;
+    animation-duration: 500ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #Contact .icon {
+        animation: none;
+    }
+}

@@ -13,6 +13,16 @@ header {
     z-index: 3;
     background-color: #FBF9F9;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    animation: hideNav linear both;
+    animation-timeline: scroll(root block);
+}
+
+@keyframes hideNav {
+    to {
+        background-color: rgb(251 249 249 / 80%);
+        backdrop-filter: blur(10px);
+    }
 }
 
 #navbar ul {
@@ -25,10 +35,27 @@ header {
 #navbar a {
     text-decoration: none;
     color: inherit;
+    transition: scale 300ms ease-in,
 }
 
 #navbar img {
     width: 90px;
     inset: 0;
     margin: auto;
+}
+
+#navbar img:hover {
+    cursor: pointer;
+}
+
+#navbar a:hover {
+    scale: 1.1;
+    text-decoration: underline 2px #8d9caa solid;
+    transition-duration: 400ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #navbar a {
+        animation: none;
+    }
 }

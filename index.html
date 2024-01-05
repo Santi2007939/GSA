@@ -96,7 +96,8 @@
         </section>
         <section id="Programas">
             <h2>Programas</h2>
-            <div class="container">
+            <div class="container" style="--num-program: 4">
+                <div class="program__progress"></div>
                 <article class="program">
                     <div class="program__text">
                         <h3>Clases particulares</h3>
@@ -144,7 +145,7 @@
                             <input type="text" placeholder="Jonas Torres" required>
                         </label>
                         <label>Edad: 
-                            <input type="number" name="age" id="age" pattern="[0-1][0-9]" required>
+                            <input type="number" placeholder="14" name="age" id="age" pattern="[0-1][0-9]" required>
                         </label>
                     </fieldset>
                     <fieldset>
@@ -153,10 +154,10 @@
                             <input type="text" placeholder="Manuel Garcia" required>
                         </label>
                         <label>Celular: 
-                            <input type="tel" name="celular" id="celular" pattern="[0-9]{9}" required>
+                            <input type="tel" placeholder="999999999" name="celular" id="celular" pattern="[0-9]{9}" required>
                         </label>
                         <label>Email: 
-                            <input type="email" name="email" id="email" required>
+                            <input type="email" placeholder="hola@dominio.com" name="email" id="email" required>
                         </label>
                     </fieldset>
                     <fieldset>
