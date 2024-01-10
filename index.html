@@ -147,7 +147,7 @@
                             <input type="text" placeholder="Jonas Torres" required>
                         </label>
                         <label>Edad: 
-                            <input type="number" placeholder="14" name="age" id="age" pattern="[0-1][0-9]" required>
+                            <input type="number" placeholder="14" name="age" id="age" min="0" max="16" required>
                         </label>
                     </fieldset>
                     <fieldset>
@@ -176,12 +176,12 @@
                         </label>
                         <label for="day">¿En qué días?</label>
                         <select name="day" id="day">
-                            <option value="LXV">L-X-V</option>
+                            <option value="LXV" selected>L-X-V</option>
                             <option value="MJS">M-J-S</option>
                         </select>
                         <label for="hour">¿En qué horario?</label>
                         <select name="hour" id="hour">
-                            <option value="AM">9:00 - 11:00am</option>
+                            <option value="AM" selected>9:00 - 11:00am</option>
                             <option value="PM">4:00 - 6:00pm</option>
                         </select>
                     </fieldset>
